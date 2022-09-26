@@ -1,0 +1,40 @@
+@mixin h1{
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  letter-spacing: -1px;
+  font-weight: 700
+};
+
+@mixin h2 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  letter-spacing: -.63px;
+  font-weight: 700
+};
+
+@mixin h3-1 {
+  line-height: 2.4rem;
+  letter-spacing: -.8px;
+  font-weight: 700
+};
+
+@mixin h3-2 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: -.25px;
+  font-weight: 700
+};
+
+@mixin body-1 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: -.25px;
+  font-weight: 500
+};
+
+@mixin body-2 {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  letter-spacing: -.23px;
+  font-weight: 700
+};
