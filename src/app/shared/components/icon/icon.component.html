@@ -1,0 +1,5 @@
+<div class="icon" [ngClass]="boxIconClass">
+  <svg class="icon__svg" [ngClass]="iconClass" [ngStyle]="isDropdown ? {'transform': 'rotate(0)', 'transition': 'all .2s'} : {}">
+    <use attr.xlink:href="assets/images/icons/sprite.svg#{{iconId}}"></use>
+  </svg>
+</div>

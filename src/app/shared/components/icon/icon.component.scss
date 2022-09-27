@@ -1,0 +1,46 @@
+@import "src/assets/scss/_variables";
+
+.icon{
+
+  display: flex;
+  align-items: center;
+
+  &--dropdown{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-1rem, -50%);
+    cursor: pointer;
+  }
+
+  &--rounded{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__svg {
+    width: .7rem;
+    height: .7rem;
+    fill: $color-button-purple;
+    transition: all .2s;
+
+    &--gray-blue {
+      fill: $color-gray-blue;
+    }
+
+    &--dropdown{
+      width: 1.5rem;
+      height: 1.5rem;
+      transform: rotate(180deg);
+    }
+  }
+}

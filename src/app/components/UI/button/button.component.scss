@@ -1,0 +1,53 @@
+@import "src/assets/scss/_variables";
+
+.button{
+  padding: 1.7rem 2.4rem;
+  border-radius: 5rem;
+  border: none;
+  background-color: $color-button-purple;
+  color: $color-text-white;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 1.2rem;
+  letter-spacing: .25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:hover{
+    background-color: $color-hover-button-purple;
+  }
+
+  &--add-invoice{
+    width: 14rem;
+    justify-content: flex-end;
+  }
+
+  &--purple{}
+
+  &--gray-light{
+    background-color: $color-button-gray-1;
+    color:$color-gray-blue;
+
+    &:hover{
+      background-color: $color-button-gray-2;
+    }
+  }
+
+  &--red {
+    background-color: $color-button-red;
+
+    &:hover{
+      background-color: $color-hover-button-red;
+    }
+  }
+
+  &--dark{
+    background-color: $color-dark-1;
+
+    &:hover{
+      background-color: $color-dark-2;
+    }
+  }
+}
