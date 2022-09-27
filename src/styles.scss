@@ -28,3 +28,7 @@ h2{
 h3{
   @include h3-1
 }
+
+li{
+  list-style: none;
+}

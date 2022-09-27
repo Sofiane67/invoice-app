@@ -9,4 +9,5 @@ export class IconComponent{
   @Input() iconId = "";
   @Input() boxIconClass = "";
   @Input() iconClass = "";
+  @Input() isDropdown = false;
 }
