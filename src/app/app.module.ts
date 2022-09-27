@@ -5,13 +5,20 @@ import {ButtonComponent} from "./components/UI/button/button.component";
 import {SharedModule} from "./shared/shared.module";
 import {FormGroupComponent} from "./components/UI/input/formGroup.component";
 import {DropdownComponent} from "./components/UI/dropdown/dropdown.component";
+import {SidebarComponent} from "./shared/layout/sidebar/sidebar.component";
+import {LogoComponent} from "./shared/components/logo/logo.component";
+import {AvatarComponent} from "./shared/components/avatar/avatar.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
     FormGroupComponent,
-    DropdownComponent
+    DropdownComponent,
+    SidebarComponent,
+    LogoComponent,
+    LogoComponent,
+    AvatarComponent
   ],
   imports: [
     BrowserModule,

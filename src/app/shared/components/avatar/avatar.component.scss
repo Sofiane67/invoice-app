@@ -1,0 +1,26 @@
+@import "src/assets/scss/_variables";
+
+.avatar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 100%;
+  flex: 1;
+  border-top: solid 1px $color-gray-blue;
+
+  &__box-img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+}
