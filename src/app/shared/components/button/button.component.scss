@@ -1,4 +1,4 @@
-@import "src/assets/scss/_variables";
+@import "../../../../assets/scss/variables";
 
 .button{
   padding: 1.7rem 2.4rem;
@@ -27,11 +27,11 @@
   &--purple{}
 
   &--gray-light{
-    background-color: $color-button-gray-1;
+    background-color: $color-gray-1;
     color:$color-gray-blue;
 
     &:hover{
-      background-color: $color-button-gray-2;
+      background-color: $color-gray-2;
     }
   }
 

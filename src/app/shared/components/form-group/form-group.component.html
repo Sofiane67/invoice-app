@@ -1,0 +1,11 @@
+<div class="form-group" [ngClass]="isFilter ? 'form-group--filter' : '' ">
+  <label *ngIf="!isFilter" class="form-group__label">{{label}}</label>
+  <div class="form-group__input-box" (click)="isDropdown ? onToggle() : ''" [ngClass]="isDropdown && isOpen ?  'form-group__input-box--focus' : ''">
+    <input type="{{type}}" class="form-group__input" [disabled]="isDropdown" [value]="isFilter && 'Filter by status'">
+    <app-icon iconId="icon-icon-arrow-down" boxIconClass="icon--dropdown" [iconClass]="'icon__svg--dropdown'" [isDropdown]="isDropdown && isOpen"></app-icon>
+  </div>
+  <app-dropdown *ngIf="isDropdown && isOpen" (click)="isDropdown ? onToggle() : ''" [options]="options"></app-dropdown>
+</div>
+
+
+<!--<app-form-group type="text" label="Street Address" [isDropdown]="true"></app-form-group>-->

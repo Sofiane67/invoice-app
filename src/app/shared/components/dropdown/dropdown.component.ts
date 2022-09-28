@@ -1,4 +1,5 @@
 import {Component, Input} from "@angular/core";
+import {Dropdown} from "./dropdown";
 
 @Component({
   selector: "app-dropdown",
@@ -6,5 +7,5 @@ import {Component, Input} from "@angular/core";
   styleUrls: ["./dropdown.component.scss"]
 })
 export class DropdownComponent{
-  
+   @Input() options: Dropdown[] = []
 }
