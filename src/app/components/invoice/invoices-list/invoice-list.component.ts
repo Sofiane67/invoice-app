@@ -2,6 +2,8 @@ import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {InvoiceService} from "../invoice.service";
 import {Subscription} from "rxjs";
 import {Dropdown} from "../../../shared/components/dropdown/dropdown";
+import {Store} from "@ngrx/store";
+import {openModal} from "../../../store/modal/modal.actions";
 
 @Component({
   selector: 'app-invoice',
@@ -20,7 +22,7 @@ export class InvoiceListComponent implements OnInit, OnDestroy {
     {option: "paid", value: "Paid", isCheckbox: true},
   ]
 
-  constructor(private invoiceService: InvoiceService) { }
+  constructor(private invoiceService: InvoiceService, private store: Store) { }
 
   ngOnInit(): void {
     this.sub = this.invoices$.subscribe(invoices =>{
@@ -30,6 +32,10 @@ export class InvoiceListComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.sub?.unsubscribe();
+  }
+
+  openModal(){
+    this.store.dispatch(openModal())
   }
 
 }

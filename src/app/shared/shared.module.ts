@@ -4,6 +4,7 @@ import {IconComponent} from "./components/icon/icon.component";
 import {ButtonComponent} from "./components/button/button.component";
 import {DropdownComponent} from "./components/dropdown/dropdown.component";
 import {FormGroupComponent} from "./components/form-group/form-group.component";
+import { ModalComponent } from './components/modal/modal.component';
 
 
 
@@ -12,17 +13,19 @@ import {FormGroupComponent} from "./components/form-group/form-group.component";
     IconComponent,
     ButtonComponent,
     DropdownComponent,
-    FormGroupComponent
+    FormGroupComponent,
+    ModalComponent
   ],
   imports: [
-    CommonModule
-  ],
-  exports: [
     CommonModule,
-    IconComponent,
-    FormGroupComponent,
-    DropdownComponent,
-    ButtonComponent
-  ]
+  ],
+    exports: [
+        CommonModule,
+        IconComponent,
+        FormGroupComponent,
+        DropdownComponent,
+        ButtonComponent,
+        ModalComponent
+    ]
 })
 export class SharedModule { }

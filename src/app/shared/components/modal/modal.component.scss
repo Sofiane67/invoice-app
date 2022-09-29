@@ -1,0 +1,45 @@
+.modal{
+  max-width: 72rem;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5.5rem;
+  padding-left: 15.5rem;
+  border-radius: 0 2rem 2rem 0;
+  z-index: 2;
+  animation: fadeIn .5s;
+
+  & h3{
+    background-color: red;
+  }
+
+  &__close, &__close ~ .backdrop{
+    transform: translateX(-100%);
+    transition: all .5s;
+  }
+}
+
+.backdrop{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(#0C0E16, .5);
+  animation: fadeIn .5s;
+}
+
+@keyframes fadeIn {
+  0%{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

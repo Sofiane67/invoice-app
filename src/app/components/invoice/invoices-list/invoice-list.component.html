@@ -5,7 +5,7 @@
       <span class="invoice-list__title--sub" >{{numberOfInvoices}}</span>
     </h1>
     <app-form-group type="text" label="Street Address" [isDropdown]="true" [options]="dropdownOptions" [isFilter]="true"></app-form-group>
-    <app-button [text]="'New Invoice'" buttonClass="button--purple button--add-invoice">
+    <app-button [text]="'New Invoice'" buttonClass="button--purple button--add-invoice" (click)="openModal()">
       <app-icon [iconId]="'icon-plus'" boxIconClass="icon--rounded"></app-icon>
     </app-button>
   </header>

@@ -1,6 +1,7 @@
 .app{
   display: grid;
   grid-template-columns: min-content 1fr;
+  position: relative;
 
   &__main{
     padding: 7rem 0;
