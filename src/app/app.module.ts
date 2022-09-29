@@ -8,6 +8,8 @@ import {AvatarComponent} from "./shared/components/avatar/avatar.component";
 import {InvoiceModule} from "./components/invoice/invoice.module";
 import {RouterModule} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
+import {StoreModule} from "@ngrx/store";
+import {reducers} from "./store/reducers";
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import {HttpClientModule} from "@angular/common/http";
   ],
   imports: [
     BrowserModule,
+    StoreModule.forRoot(reducers),
     InvoiceModule,
     HttpClientModule,
     RouterModule.forRoot([
