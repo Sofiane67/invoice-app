@@ -1,0 +1,13 @@
+<div class="invoice">
+  <span class="invoice__id">
+    #<span class="invoice__font-style">{{invoice.id}}</span>
+  </span>
+  <span class="invoice__date">{{invoice.paymentDue | date: 'd MMM y'}}</span>
+  <span class="invoice__customer">{{invoice.clientName}}</span>
+  <span class="invoice__amount">
+    <span class="invoice__font-style">{{invoice.total | currency}}
+    </span>
+  </span>
+  <span class="invoice__status" [ngClass]="'invoice__status--'+invoice.status" >&bull; {{invoice.status | titlecase }}</span>
+  <app-icon [iconId]="'icon-icon-arrow-right'"></app-icon>
+</div>

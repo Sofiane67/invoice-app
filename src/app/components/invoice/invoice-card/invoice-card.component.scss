@@ -1,0 +1,59 @@
+@import "~src/assets/scss/_variables";
+
+.invoice{
+  background: #FFFFFF;
+  box-shadow: 0 10px 10px -10px rgba(72, 84, 159, 0.100397);
+  border-radius: 8px;
+  height: 7.2rem;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: solid 1px #FFFFFF;
+  color: $color-gray-blue;
+
+  &__font-style{
+    font-weight: 700;
+    color: $color-bg-dark;
+  }
+
+  &:hover{
+    border: solid 1px $color-button-purple;
+  }
+
+  &__id{
+
+  }
+
+  &__date{}
+
+  &__customer{}
+
+  &__amount{}
+
+  &__status{
+    width: 10.5rem;
+    height: 4rem;
+    border-radius: .6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--paid{
+      color: $color-paid;
+      background-color: lighten($color-paid, 46%);
+    }
+
+    &--pending{
+      color: $color-pending;
+      background-color: lighten($color-pending, 46%);
+    }
+
+    &--draft{
+      color: $color-dark-1;
+      background-color: lighten($color-dark-1, 70%);
+    }
+  }
+}

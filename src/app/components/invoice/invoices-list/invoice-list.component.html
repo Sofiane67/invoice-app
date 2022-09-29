@@ -1,0 +1,15 @@
+<div class="invoice-list">
+  <header class="invoice-list__header">
+    <h1 class="invoice-list__title">
+      <span class="invoice-list__title--main">Invoices</span>
+      <span class="invoice-list__title--sub" >{{numberOfInvoices}}</span>
+    </h1>
+    <app-form-group type="text" label="Street Address" [isDropdown]="true" [options]="dropdownOptions" [isFilter]="true"></app-form-group>
+    <app-button [text]="'New Invoice'" buttonClass="button--purple button--add-invoice">
+      <app-icon [iconId]="'icon-plus'" boxIconClass="icon--rounded"></app-icon>
+    </app-button>
+  </header>
+  <div class="invoice-list__items" *ngIf="invoices$ | async as invoices">
+    <app-invoice-card *ngFor="let invoice of invoices" [invoice]="invoice"></app-invoice-card>
+  </div>
+</div>

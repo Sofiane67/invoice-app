@@ -1,5 +1,11 @@
-.box{
-  display: flex;
-  justify-content: space-around;
-  padding: 100px 0;
+.app{
+  display: grid;
+  grid-template-columns: min-content 1fr;
+
+  &__main{
+    padding: 7rem 0;
+    justify-content: center;
+    overflow: scroll;
+    max-height: 100vh;
+  }
 }
